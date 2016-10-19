@@ -9,7 +9,6 @@
   </rule>
 
   <rule ref="Generic.CodeAnalysis.EmptyStatement" />
-  <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter" />
   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod" />
 
   <rule ref="Squiz.Commenting.BlockComment" />
