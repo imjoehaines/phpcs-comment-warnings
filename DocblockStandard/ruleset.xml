@@ -6,6 +6,9 @@
 
     <!-- aligning with spaces is literally the worst thing -->
     <exclude name="Generic.Commenting.DocComment.TagValueIndent" />
+
+    <!-- this is a bit silly -->
+    <exclude name="Generic.Commenting.DocComment.NonParamGroup" />
   </rule>
 
   <rule ref="Generic.CodeAnalysis.EmptyStatement" />
