@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
 <ruleset name="DocblockStandard">
-  <rule ref="Generic.Commenting.DocComment" />
+  <rule ref="Generic.Commenting.DocComment">
+    <!-- not everything needs a description -->
+    <exclude name="Generic.Commenting.DocComment.MissingShort" />
+
+    <!-- aligning with spaces is literally the worst thing -->
+    <exclude name="Generic.Commenting.DocComment.TagValueIndent" />
+  </rule>
+
   <rule ref="Generic.CodeAnalysis.EmptyStatement" />
   <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter" />
   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod" />
@@ -25,6 +32,9 @@
   <rule ref="Squiz.Commenting.FunctionComment">
     <!-- aligning with spaces is literally the worst thing -->
     <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+
+    <!-- not all parameters need a comment -->
+    <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment" />
   </rule>
 
   <rule ref="Squiz.Commenting.InlineComment">
