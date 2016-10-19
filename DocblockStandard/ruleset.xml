@@ -29,14 +29,21 @@
   <rule ref="Squiz.Commenting.VariableComment">
     <!-- this has to be turned off to use doctrine -->
     <exclude name="Squiz.Commenting.VariableComment.TagNotAllowed" />
+
+    <!-- enforcing the order of @var is pointless -->
+    <exclude name="Squiz.Commenting.VariableComment.VarOrder" />
   </rule>
 
   <rule ref="Squiz.Commenting.FunctionComment">
     <!-- aligning with spaces is literally the worst thing -->
     <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+    <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" />
 
     <!-- not all parameters need a comment -->
     <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment" />
+
+    <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
+    <exclude name="Squiz.Commenting.FunctionComment.ParamCommentNotCapital" />
   </rule>
 
   <rule ref="Squiz.Commenting.InlineComment">
