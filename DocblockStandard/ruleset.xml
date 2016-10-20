@@ -20,11 +20,6 @@
   <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
   <rule ref="Squiz.Commenting.PostStatementComment" />
 
-  <rule ref="Squiz.Commenting.ClassComment">
-    <!-- this has to be turned off to use doctrine -->
-    <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed" />
-  </rule>
-
   <rule ref="Squiz.Commenting.VariableComment">
     <!-- this has to be turned off to use doctrine -->
     <exclude name="Squiz.Commenting.VariableComment.TagNotAllowed" />
