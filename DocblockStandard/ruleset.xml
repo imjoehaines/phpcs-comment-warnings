@@ -38,6 +38,9 @@
 
     <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
     <exclude name="Squiz.Commenting.FunctionComment.ParamCommentNotCapital" />
+
+    <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital" />
+    <exclude name="Squiz.Commenting.FunctionComment.ThrowsNoFullStop" />
   </rule>
 
   <rule ref="Squiz.Commenting.InlineComment">
