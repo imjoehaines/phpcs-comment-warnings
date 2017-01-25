@@ -41,6 +41,9 @@
 
     <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital" />
     <exclude name="Squiz.Commenting.FunctionComment.ThrowsNoFullStop" />
+
+    <!-- this is helpful but requires "boolean" and "integer" -->
+    <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn" />
   </rule>
 
   <rule ref="Squiz.Commenting.InlineComment">
